@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import Form from "./components/Form";
 
 export default function App() {
   return (
@@ -10,6 +11,8 @@ export default function App() {
             <Text style={styles.title}>Hello</Text>
             <Text style={styles.title}>CryptoWorld</Text>
           </View>
+
+          <Form />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -17,13 +20,12 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: "#fff" },
-  container: { padding: 20, alignItems: "center" },
-  view: { padding: 20, backgroundColor: "#f8f8ff" },
+  safeArea: { flex: 1, backgroundColor: "#E8F4F3" },
+  container: { flexGrow: 1, paddingTop: 28 },
+  view: { paddingHorizontal: 20, paddingBottom: 12 },
   title: {
-    fontSize: 40,
-    fontColor: "#1976d",
-    fontWeight: "bold",
-    textAlign: "center",
+    color: "#123B4A",
+    fontSize: 34,
+    fontWeight: "800",
   },
 });
